@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AuraTech | Componentes</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+<header>
+  <div class="logo" onclick="window.location.href='index.html'">
+    <img src="images/Presentación_Empresarial_Tecnología_Inteligencia_Artificial_Digital_Moderno_Azul_Oscuro-removebg-preview.png" alt="Logo AuraTech">
+    <h1>AuraTech</h1>
+  </div>
+
+  <div class="buscador">
+    <div class="buscador-input">
+      <input type="text" placeholder="Buscar componentes...">
+      <button><i class="fa-solid fa-magnifying-glass"></i></button>
+    </div>
+  </div>
+
+  <div class="usuario">
+    <a href="login.html">Inicia Sesión</a>
+    <!-- 🛒 CARRITO DE COMPRAS -->
+<div class="carrito">
+  <img src="https://cdn-icons-png.flaticon.com/512/263/263142.png" alt="Carrito" class="icono-carrito">
+
+  <!-- 🔽 MENÚ DESPLEGABLE DEL CARRITO -->
+  <div class="dropdown-carrito">
+    <table>
+      <thead>
+        <tr>
+          <th>Imagen</th>
+          <th>Descripción</th>
+          <th>Precio</th>
+          <th>Cantidad</th>
+          <th>Acción</th>
+        </tr>
+      </thead>
+      <tbody id="cart-items">
+        <tr><td colspan="5" class="empty">Carrito vacío</td></tr>
+      </tbody>
+    </table>
+    <div class="cart-total">Total: S/ 0.00</div>
+  </div>
+</div>
+
+</header>
+
+<nav>
+  <ul>
+    <li><a href="Index.html">Inicio</a></li>
+    <li><a href="componentes.html">Componentes</a></li>
+    <li><a href="#">Ofertas</a></li>
+    <li><a href="#">Contacto</a></li>
+  </ul>
+</nav>
+
+<!-- ========================
+     SECCIÓN DE COMPONENTES
+========================= -->
+<main class="componentes">
+  <!-- PANEL IZQUIERDO -->
+  <aside class="filtros">
+    <h3>Componentes</h3>
+    <ul class="lista-categorias">
+      <li><a href="#" data-cat="tarjetas">Tarjetas Gráficas</a></li>
+      <li><a href="#" data-cat="procesadores">Procesadores</a></li>
+      <li><a href="#" data-cat="placas">Placas Base</a></li>
+      <li><a href="#" data-cat="ram">Memorias RAM</a></li>
+      <li><a href="#" data-cat="almacenamiento">SSD / HDD</a></li>
+      <li><a href="#" data-cat="refrigeracion">Refrigeración</a></li>
+    </ul>
+  </aside>
+
+  <!-- CATÁLOGO DERECHA -->
+  <section class="catalogo">
+    <h2 id="titulo-categoria">🧩 Selecciona una categoría</h2>
+    <div id="contenedor-productos" class="grid-productos"></div>
+  </section>
+</main>
+
+<footer>
+  <p>© 2025 AuraTech - Todos los derechos reservados.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
