@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AuraTech | Iniciar Sesión</title>
+
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+</head>
+
+<body>
+
+  <!-- ========================== HEADER ========================== -->
+  <header>
+    <div class="logo" onclick="window.location.href='index.html'">
+      <img src="images/Presentación_Empresarial_Tecnología_Inteligencia_Artificial_Digital_Moderno_Azul_Oscuro-removebg-preview.png" alt="AuraTech Logo">
+      <h1>AuraTech</h1>
+    </div>
+
+    <div class="buscador">
+      <div class="buscador-input">
+        <input type="text" placeholder="Buscar productos gamer...">
+        <button><i class="fa-solid fa-magnifying-glass"></i></button>
+      </div>
+    </div>
+
+    <div class="usuario">
+      <a href="login.html" class="activo">Inicia Sesión</a>
+      <!-- 🛒 CARRITO DE COMPRAS -->
+<div class="carrito">
+  <img src="https://cdn-icons-png.flaticon.com/512/263/263142.png" alt="Carrito" class="icono-carrito">
+
+  <!-- 🔽 MENÚ DESPLEGABLE DEL CARRITO -->
+  <div class="dropdown-carrito">
+    <table>
+      <thead>
+        <tr>
+          <th>Imagen</th>
+          <th>Descripción</th>
+          <th>Precio</th>
+          <th>Cantidad</th>
+          <th>Acción</th>
+        </tr>
+      </thead>
+      <tbody id="cart-items">
+        <tr><td colspan="5" class="empty">Carrito vacío</td></tr>
+      </tbody>
+    </table>
+    <div class="cart-total">Total: S/ 0.00</div>
+  </div>
+</div>
+
+  </header>
+
+  <!-- ========================== NAV ========================== -->
+  <nav>
+   <ul>
+      <li><a href="index.html">Inicio</a></li>
+      <li><a href="componentes.html">Componentes</a></li>
+      <li><a href="#">Ofertas</a></li>
+      <li><a href="contacto.html" class="activo">Contacto</a></li>
+    </ul>
+  </nav>
+
+  <!-- ========================== LOGIN AREA ========================== -->
+  <div class="login-area">
+    <div class="login-box">
+      <div class="login-header">
+        <img src="images/Presentación_Empresarial_Tecnología_Inteligencia_Artificial_Digital_Moderno_Azul_Oscuro-removebg-preview.png" alt="AuraTech Logo">
+        <h2><span>Aura</span>Tech</h2>
+        <p>Inicia sesión y potencia tu experiencia ⚡</p>
+      </div>
+
+      <form class="login-form">
+        <div class="input-group">
+          <i class="fa-solid fa-user"></i>
+          <input type="text" placeholder="Correo o usuario" required />
+        </div>
+
+        <div class="input-group">
+          <i class="fa-solid fa-lock"></i>
+          <input type="password" placeholder="Contraseña" required />
+        </div>
+
+        <button type="submit" class="btn-login">Acceder</button>
+
+        <div class="options">
+          <a href="#">¿Olvidaste tu contraseña?</a>
+          <p>¿No tienes cuenta? <a href="#">Regístrate</a></p>
+        </div>
+
+        <button type="button" class="btn-volver" onclick="window.location.href='index.html'">
+          <i class="fa-solid fa-arrow-left"></i> Volver al inicio
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <footer>
+    <p>*Imágenes referenciales. Aplican términos y condiciones.</p>
+    <p>© 2025 AuraTech - Todos los derechos reservados.</p>
+  </footer>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
